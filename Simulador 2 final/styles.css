@@ -1,0 +1,74 @@
+body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .texto-novo {
+            color: #000000;
+        }
+        .botoes {
+            padding: 50px;
+            text-align: center;
+        }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding:40px;
+    text-align: center;
+    border-radius: 50px;
+}
+main img {
+    max-width: 100%;
+    height: auto;
+}
+/*Colocando easter egg só pra testar*/
+main .texto-hover {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 5s ease, max-height 5s ease;
+}
+
+/*Quando o mouse passa na div, o parágrafo aparece */
+main:hover .texto-hover ,
+main:focus-within .texto-hover {
+    opacity: 1;
+    max-height: 200px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    color: rgb(3, 3, 3);
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
